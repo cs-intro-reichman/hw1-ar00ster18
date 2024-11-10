@@ -7,5 +7,12 @@ public class Ascend {
 		int b = (int)((Math.random())*lim);
 		int c = (int)((Math.random())*lim);
 
+		int min = Math.min(Math.min(a, b), c);
+		int mid = Math.max(Math.min(a, b), Math.min(Math.max(a, b), c));
+		int max = Math.max(Math.max(a, b), c);
+
+		System.out.println(a + " " + b + " " + c);
+		System.out.println(min + " " + mid + " " + max);
+
 	}
 }
