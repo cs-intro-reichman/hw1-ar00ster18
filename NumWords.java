@@ -2,10 +2,7 @@
 public class NumWords {
 	public static void main(String args[]) {
 	    int num = Integer.parseInt(args[0]);
-		int hund = num/100;
-		int tens = (num/10)%10;
-		int ones = (num%100)%10;
 
-		System.out.println(hund + " hundreds, " + tens + " tens, " + ones + " ones.");
+		System.out.println(num/100 + " hundreds, " + (num/10)%10 + " tens, " + (num%100)%10 + " ones.");
 	}
 }
