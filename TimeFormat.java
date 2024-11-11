@@ -14,7 +14,13 @@ public class TimeFormat {
 		int minutes = Integer.parseInt("" + args[0].charAt(3) + args[0].charAt(4));
         
 
-		int h = hours%12;
+		int h = hours;
+		if (hours > 12){
+
+			h = hours%12;
+
+		}
+
 		String m = "";
 		String timeOfDay = "";
 		if(hours > 23 || minutes > 59){
